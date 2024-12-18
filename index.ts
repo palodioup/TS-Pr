@@ -3,7 +3,7 @@ let useremailInput: HTMLInputElement = document.getElementById('useremail') as H
 let userpasswordInput: HTMLInputElement = document.getElementById('userpassword') as HTMLInputElement
 let result: HTMLParagraphElement = document.getElementById('result') as HTMLParagraphElement;
 let result1: HTMLParagraphElement = document.getElementById('result1') as HTMLParagraphElement
-let result2: HTMLParagraphElement = document.getElementById('result2') as HTMLParagraphElement
+let result2: HTMLParagraphElement = document.getElementById('result1') as HTMLParagraphElement
 let btn: HTMLButtonElement = document.getElementById("submitBtn") as HTMLButtonElement
 let username: string;
 let useremail: string;
@@ -17,7 +17,7 @@ btn.addEventListener('click', function () {
     result.innerHTML = "Name email and password are required"
   } else {
     result.innerHTML = "Name: " + username
-    result1.innerHTML = "Email: " + useremail
-    result2.innerHTML = "Password: " + userpassword
+    result.innerHTML = "Email: " + useremail
+    result.innerHTML = "Password: " + userpassword
   }
 });
